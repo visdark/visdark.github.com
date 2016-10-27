@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>FXBTG-签到登录页</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+	<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+	<link rel="stylesheet" href="//cdn.bootcss.com/simple-line-icons/2.4.1/css/simple-line-icons.css">
+	<link rel="stylesheet" href="assets/css/login.css">
+
+</head>
+<body>
+
+<div class="page-group">
+	<div class="page page-current" id="login">
+		<header class="theme-dark bar bar-nav">
+			<h1 class="title">FXBTG签到登录</h1>
+		</header>
+		<nav class="theme-dark bar bar-tab">
+			<a class="tab-item external active open-panel" data-panel='#panel-left'>
+				<span class="icon">
+				<i class="icon-login icons"></i>
+				</span>
+				<span class="tab-label">普通登录</span>
+			</a>
+			<a class="tab-item external open-popup" data-popup=".popup-about">
+				<span class="icon"><i class="icon-bubble icons"></i></span>
+				<span class="tab-label">微信登录</span>
+			</a>
+			<a href="page/forget.html" class="tab-item">
+				<span class="icon"><i class="icon-exclamation icons"></i></span>
+				<span class="tab-label">忘记密码</span>
+			</a>
+		</nav>
+		<div class="content native-scroll loginBg" id="page-login">
+			<div class="content-inner">
+				<div class="text-center">
+					<br/>
+					<br/>
+					<img src="assets/img/logo.png"/>
+					<br/>
+				</div>
+				<div class="list-block">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-media"><i class="icon icon-form-name"></i></div>
+								<div class="item-inner">
+									<div class="item-title label">账号</div>
+									<div class="item-input">
+										<input type="text" placeholder="您的账号">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-media"><i class="icon icon-form-password"></i></div>
+								<div class="item-inner">
+									<div class="item-title label">密码</div>
+									<div class="item-input">
+										<input type="password" placeholder="您的密码" class="">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-media"><i class="icon icon-form-toggle"></i></div>
+								<div class="item-inner">
+									<div class="item-title label">记住我</div>
+									<div class="item-input">
+										<label class="label-switch">
+											<input type="checkbox">
+											<div class="checkbox"></div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content-block">
+					<div class="row">
+						<div class="col-100"><a href="page/" class="button button-big button-fill button-round">登录</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="panel panel-left panel-reveal theme-dark" id='panel-left'>
+	<header class="bar bar-nav">
+		<a class="button button-link pull-right close-panel">
+			<i class="icon-close icons"></i>
+		</a>
+		<h1 class="title">功能栏</h1>
+	</header>
+	<div class="content native-scroll">
+		<div class="content-inner">
+			<div class="content-block">
+				<div class="content-block-title">上下班签到</div>
+				<div class="list-block">
+					<ul>
+						<li class="item-content item-link">
+							<div class="item-media"><i class="icon icon-f7"></i></div>
+							<div class="item-inner">
+								<div class="item-title"><a href="#" class="alert-text">上班签到</a></div>
+								<div class="item-after"></div>
+							</div>
+						</li>
+						<li class="item-content item-link">
+							<div class="item-media"><i class="icon icon-f7"></i></div>
+							<div class="item-inner">
+								<div class="item-title"><a href="#" class="alert-text2">下班签到</a></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="content-block-title">提示框（默认2秒钟）</div>
+				<div class="list-block">
+					<ul>
+						<li class="item-content item-link">
+							<div class="item-media"><i class="icon icon-f7"></i></div>
+							<div class="item-inner">
+								<div class="item-title"><a href="#" class="toast-text">错误提示</a></div>
+							</div>
+						</li>
+						<li class="item-content item-link">
+							<div class="item-media"><i class="icon icon-f7"></i></div>
+							<div class="item-inner">
+								<div class="item-title"><a href="#" class="toast-text2">成功提示</a></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="item-title"><a class="button close-panel">确定</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="theme-dark popup popup-about">
+	<header class="bar bar-nav">
+		<a class="button button-link pull-right close-popup">
+			<i class="icon-close icons"></i>
+		</a>
+		<h1 class="title">微信扫一扫</h1>
+	</header>
+	<div class="content native-scroll">
+		<div class="content-inner">
+			<div class="content-block">
+				<div class="text-center">
+					<br/>
+					<div class="row">
+						<div class="col-25">
+							<br/>
+						</div>
+						<div class="col-50"><img src="assets/img/showqrcode.jpg" CLASS="img-responsive"/></div>
+						<div class="col-25">
+							<br/>
+						</div>
+					</div>
+					<br/>
+				</div>
+				<div class="text-center">
+					关注二维码<br/>FXBTG 版权所有
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script type='text/javascript'>
+	$(function () {
+		$(document).on('click', '.alert-text', function () {
+			$.alert('世界的标准太LOW,我就是世界的标准', '上班签到!', function () {
+				$.alert('我在，我在，我在！')
+			});
+		});
+		$(document).on('click', '.alert-text2', function () {
+			$.alert('你若是方向，世界自会寻你而来', '下班签到!', function () {
+				$.alert('回家咯!记得早点休息哦。')
+			});
+		});
+		$(document).on('click', '.toast-text', function () {
+			$.toast("密码错误，请重试");
+		});
+		$(document).on('click', '.toast-text2', function () {
+			$.toast('登录成功，正在跳转...', 2000, 'success top');
+		});
+	});
+
+
+	$(".day-go").calendar({
+		value: ['2015-12-05']
+	});
+</script>
+
+</body>
+</html>

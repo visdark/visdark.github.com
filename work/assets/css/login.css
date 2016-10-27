@@ -1,5 +1,67 @@
 .loginBg {
-  background: #334960 url(../img/lightBg.png) center no-repeat;
+  background: #eee url(../img/lightBg.png) center no-repeat;
   height: 100%;
   _background: #334960;
+}
+img {
+  box-sizing: border-box;
+  vertical-align: middle;
+  border: 0;
+}
+.theme-dark .tab-item.active {
+  color: #f60;
+}
+.bar .button-link {
+  color: #f60;
+}
+.button {
+  border: 1px solid #f60;
+  color: #f60;
+}
+.button.active,
+.button.active:active {
+  color: #f7f7f7;
+  border-color: #cb5200;
+}
+a {
+  color : #f60;
+}
+.color-gray {
+  color: #999;
+  font-size: .75rem;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.button.button-fill {
+  background: #f60;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.buttons-tab .button.active {
+  color: #f60;
+  border-color: #f60;
+}
+.card-footer a.link, .card-header a.link {
+  height      : 5rem;
+}
+.card-footer .row {
+  overflow: hidden;
+  margin-left: 0;
+  width: 100%;
+}
+.number{
+  font-size: 2rem;
+  width: 100%;
+  color: #0a628f;
+}
+.list-block .item-content {
+  padding-left : .75rem;
+  padding-right: .75rem;
+}
+.list-block .item-media+.item-inner {
+  margin-left: 0rem;
 }
